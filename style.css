@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+* {
+  outline: 1px dotted yellow;
+}
+
+.nav {
+  color: black;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  float: left;
+  font-size: 1.4rem;
+  margin-top: 35px;
+}
+
+.links {
+  float: right;
+  margin-top: 26px;
+  font-size: 1rem;
+}
+
+.links a {
+  float: left;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  border: solid 1.5px;
+}
+
+.links a:hover {
+  padding: 10px 50px 10px 20px;
+}
+
+.links a.current {
+  padding: 10px 50px 10px 20px;
+}
+
+.banner {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner img {
+  width: 100%;
+}
