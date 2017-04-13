@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 body {
   background-color: #f2f2f2;
@@ -6,56 +7,238 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.header_wrapper {
+  background-color: #FFDFDB;
+  overflow: hidden;
+  height: 705px;
+}
+
+ /* * {
+  outline: 2px dotted red;
+} */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 .header {
   overflow: hidden;
-  height: 90px;
-  margin-bottom: 20px;
-}
-
-* {
-  outline: 1px dotted yellow;
-}
-
-.nav {
   color: black;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 35px;
 }
 
-.logo {
-  float: left;
-  font-size: 1.4rem;
-  margin-top: 35px;
+.header_logo {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.header_logo img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.header_text {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-style: italic;
+    margin-top: 100px;
+}
+
+.header_text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.links_wrapper {
+  background-color: #2d303a;
+  overflow: hidden;
 }
 
 .links {
-  float: right;
-  margin-top: 26px;
-  font-size: 1rem;
-}
-
-.links a {
-  float: left;
-  text-decoration: none;
-  padding: 10px 20px 10px 20px;
-  border: solid 1.5px;
-}
-
-.links a:hover {
-  padding: 10px 50px 10px 20px;
-}
-
-.links a.current {
-  padding: 10px 50px 10px 20px;
-}
-
-.banner {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.banner img {
-  width: 100%;
+.link {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #FFDFDB;
+}
+
+.link a {
+  color: white;
+  text-decoration: none;
+  background-color: #2d303a;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 1.3rem;
+}
+
+.link a:hover {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.info_wrapper {
+  background-color: white;    /*change this colour later */
+  color: black;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/*.who_am_i {
+  margin-top: 35px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+.info {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  overflow: hidden;
+
+}
+
+.column_one_third {
+  width: 333.3px;
+  float: left;
+}
+
+.column_one_third img {
+  width: 150px;
+  height: 150px;
+  border-radius: 140px;
+  margin-left: 90px;
+  margin-top: 35px;
+  background-color: white;
+}
+
+.column_one_third p {
+  margin-right: 10px;
+}
+
+.column_two_third {
+  width: 666.666px;
+  float: left;
+}
+
+.column_two_third img {
+  width: 209.5px;
+  height: 200px;
+  border-radius: 40px;
+}
+
+.divider {
+  height: 10px;
+  background-color: #FFDFDB;     /*#2d303a*/
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.portfolio_wrapper {
+  background-color: #D6F6FF;
+  overflow: hiddem;
+}
+
+.portfolio {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.phone_holder {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.slideshow {
+  overflow: hidden;
+}
+.slideshow img {
+  width: 95%;
+  max-height: 240px;
+}
+
+.animation {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.future_stuff {
+  margin-bottom: 35px;;
+  overflow: hidden;
+}
+
+
+.my_slides_1, .my_slides_2 {
+  display: none;
+}
+
+.footer_wrapper {
+  background-color: #2d303a;
+  height: 70px;
+  overflow: hidden;
+}
+
+.footer {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.footer p {
+  color: white;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+/*fading animation*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
